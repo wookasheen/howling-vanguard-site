@@ -1,18 +1,176 @@
-/* Additional asset styles for Howling Vanguard */
+/* ===========================
+   Howling Vanguard Main Styles
+   =========================== */
 
-/* Hero adjustments */
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container & Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.primary-nav a {
+  margin: 0 0.75rem;
+  font-weight: 500;
+}
+
+.primary-nav a:hover {
+  color: #0a58ca;
+}
+
+.header-cta .btn-primary {
+  background: #0a58ca;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.header-cta .btn-primary:hover {
+  background: #0948a5;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background: #0a58ca;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0948a5;
+}
+
+.btn-ghost {
+  border: 2px solid #0a58ca;
+  color: #0a58ca;
+}
+
+.btn-ghost:hover {
+  background: #0a58ca;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.hero-copy .lead {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.trust-points {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.trust-points li {
+  margin-bottom: 0.5rem;
+}
+
+/* Hero Image Enhancements */
 .hero-media img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Buttons in hero section */
 .hero .btn {
   margin-right: 1rem;
 }
 
-/* Service cards */
+/* Cards (Services) */
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .cards article {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -21,19 +179,31 @@
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
-/* Alt section background adjustments */
+/* Alt Section */
 .section.alt {
   background-color: #eef2f7;
 }
 
-/* Steps styling */
+/* Steps */
+.steps {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
 .steps strong {
   color: #0a58ca;
 }
 
-/* Bullet styles */
+/* Results Bullets */
+.bullets {
+  display: grid;
+  gap: 1rem;
+}
+
 .bullets .bullet {
+  padding: 1rem;
   background-color: #fdfdfd;
+  border-radius: 4px;
   transition: box-shadow 0.2s ease;
 }
 
@@ -41,8 +211,61 @@
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-/* Footer grid alignment */
+/* CTA Section */
+.cta {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.cta p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .footer-grid nav a {
   display: block;
   margin: 0.25rem 0;
+  color: #bbb;
+}
+
+.footer-grid nav a:hover {
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .primary-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .header-cta {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
