@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Allow: /
+
+Sitemap: https://www.howlingvanguard.com/sitemap.xml
