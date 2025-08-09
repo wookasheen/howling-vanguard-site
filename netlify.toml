@@ -1,0 +1,19 @@
+# Redirect non-www → www (or flip if you prefer root)
+[[redirects]]
+  from = "https://howlingvanguard.com/*"
+  to = "https://www.howlingvanguard.com/:splat"
+  status = 301
+  force = true
+
+# Force HTTPS
+[[redirects]]
+  from = "http://www.howlingvanguard.com/*"
+  to = "https://www.howlingvanguard.com/:splat"
+  status = 301
+  force = true
+
+# Cache images/CSS/JS a bit
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
