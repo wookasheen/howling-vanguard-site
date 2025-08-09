@@ -1,0 +1,48 @@
+/* Additional asset styles for Howling Vanguard */
+
+/* Hero adjustments */
+.hero-media img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Buttons in hero section */
+.hero .btn {
+  margin-right: 1rem;
+}
+
+/* Service cards */
+.cards article {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cards article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Alt section background adjustments */
+.section.alt {
+  background-color: #eef2f7;
+}
+
+/* Steps styling */
+.steps strong {
+  color: #0a58ca;
+}
+
+/* Bullet styles */
+.bullets .bullet {
+  background-color: #fdfdfd;
+  transition: box-shadow 0.2s ease;
+}
+
+.bullets .bullet:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Footer grid alignment */
+.footer-grid nav a {
+  display: block;
+  margin: 0.25rem 0;
+}
