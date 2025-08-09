@@ -1,58 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Howling Vanguard – AI Automation Agency</title>
-  <link rel="icon" href="assets/logo-header.png" type="image/png">
+  <!-- Basics -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Turn clicks into customers with AI automation. Make.com workflows, AI agents, chatbots, and lead capture to grow your business.">
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <title>AI Automation & Make.com Workflows for SMEs | Howling Vanguard</title>
+  <meta name="description" content="We build AI agents, Make.com workflows, and chatbots that capture leads, reduce busywork, and increase revenue. Fast implementation, clear ROI, and ongoing optimization." />
+  <link rel="canonical" href="https://www.howlingvanguard.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Automation & Make.com Workflows for SMEs | Howling Vanguard" />
+  <meta property="og:description" content="AI agents, Make.com workflows, and chatbots that turn clicks into customers and automate the busywork." />
+  <meta property="og:image" content="https://www.howlingvanguard.com/assets/og-image.jpg" />
+  <meta property="og:url" content="https://www.howlingvanguard.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Styles (both files!) -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="/">
-        <img src="assets/logo-header.png" alt="Howling Vanguard Logo" height="50">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Howling Vanguard home">
+        <img src="assets/logo-header.png" width="36" height="36" alt="Howling Vanguard logo" decoding="async" />
+        <span class="brand-name">Howling Vanguard</span>
       </a>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Our Process</a></li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#book">Book a Call</a></li>
-      </ul>
-      <a href="#book" class="btn">Get a Free Audit</a>
-    </nav>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">Our Process</a>
+        <a href="#results">Results</a>
+        <a href="booking.html">Book a Call</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary" href="https://calendly.com/djvbusiness10/30min" rel="noopener" target="_blank">Get a Free Audit</a>
+      </div>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Turn clicks into customers with AI automation</h1>
-      <p>We design AI agents, Make.com workflows, and chatbots that capture leads, cut manual work, and increase revenue. Ship fast. Iterate faster.</p>
-      <a href="#book" class="btn-primary">Get a Free Audit</a>
-      <a href="#services" class="btn-secondary">See What We Automate</a>
-    </div>
-    <div class="hero-image">
-      <picture>
-        <source srcset="assets/hero-wolf-640.webp 640w,
-                        assets/hero-wolf-960.webp 960w,
-                        assets/hero-wolf-1280.webp 1280w,
-                        assets/hero-wolf-1600.webp 1600w,
-                        assets/hero-wolf-1920.webp 1920w,
-                        assets/hero-wolf-2400.webp 2400w"
-                sizes="(max-width: 1200px) 100vw, 50vw"
-                type="image/webp">
-        <img src="assets/hero-wolf-1280.jpg" 
-             alt="Stylized howling wolf hero image" 
-             loading="lazy" decoding="async" width="640" height="640">
-      </picture>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container grid-2">
+      <div class="hero-copy">
+        <h1>Turn clicks into customers with AI automation</h1>
+        <p class="lead">
+          We design AI agents, Make.com workflows, and chatbots that capture leads, cut manual work, and increase revenue. Ship fast. Iterate faster.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://calendly.com/djvbusiness10/30min" rel="noopener" target="_blank">Get a Free Audit</a>
+          <a class="btn btn-ghost" href="#services">See What We Automate</a>
+        </div>
+        <ul class="trust-points">
+          <li>Make.com + OpenAI experts</li>
+          <li>Clear ROI focus</li>
+          <li>Done-for-you implementation</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <picture>
+          <source type="image/webp" srcset="
+            assets/hero-wolf-640.webp 640w,
+            assets/hero-wolf-960.webp 960w,
+            assets/hero-wolf-1280.webp 1280w,
+            assets/hero-wolf-1600.webp 1600w,
+            assets/hero-wolf-1920.webp 1920w,
+            assets/hero-wolf-2400.webp 2400w" sizes="(max-width: 1200px) 100vw, 560px">
+          <!-- JPEG fallback -->
+          <source type="image/jpeg" srcset="assets/og-image.jpg 1280w" sizes="(max-width: 1200px) 100vw, 560px">
+          <img src="assets/og-image.jpg" alt="Stylized howling wolf hero image" loading="eager" decoding="async" width="560" height="380">
+        </picture>
+      </div>
     </div>
   </section>
 
-  <!-- Rest of your existing HTML content goes here -->
+  <main id="main">
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services that move the needle</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Lead Capture & Nurture</h3>
+            <p>Multi-step forms, CRM enrichment, and automated email/SMS follow-ups that convert visitors into booked calls.</p>
+            <ul>
+              <li>Web → CRM syncing</li>
+              <li>Duplicate lead prevention</li>
+              <li>48-hour follow-ups & reminders</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>AI Agents & Chatbots</h3>
+            <p>On-site assistants trained on your FAQs and offers to qualify leads and handle common questions 24/7.</p>
+            <ul>
+              <li>FAQ ingestion & routing</li>
+              <li>Calendar hand-off</li>
+              <li>Conversation analytics</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Ops Automation</h3>
+            <p>Make.com workflows that eliminate repetitive tasks: data entry, notifications, document generation, and more.</p>
+            <ul>
+              <li>CRM ↔ Sheets sync</li>
+              <li>Slack/Email alerts</li>
+              <li>Contracts & invoices</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- Process -->
+    <section id="process" class="section alt">
+      <div class="container">
+        <h2>Our process</h2>
+        <ol class="steps">
+          <li><strong>Discovery (15 min)</strong> — Understand your goals and quick wins.</li>
+          <li><strong>Blueprint</strong> — We map the workflow and KPIs.</li>
+          <li><strong>Build</strong> — Implement automations and test edge cases.</li>
+          <li><strong>Launch & Iterate</strong> — Measure, optimize, and scale.</li>
+        </ol>
+        <a class="btn btn-primary" href="https://calendly.com/djvbusiness10/30min" target="_blank" rel="noopener">Book Discovery Call</a>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="section">
+      <div class="container">
+        <h2>Results to expect</h2>
+        <div class="bullets">
+          <div class="bullet"><strong>+20–40%</strong> more qualified leads (better capture + follow-ups)</div>
+          <div class="bullet"><strong>10–30 hrs/mo</strong> saved from repetitive tasks</div>
+          <div class="bullet"><strong>Faster response</strong> with AI chat & routing</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CTA -->
+  <section class="cta section alt">
+    <div class="container center">
+      <h2>Ready to automate growth?</h2>
+      <p>Get a free audit: we’ll identify quick wins and give you a simple roadmap.</p>
+      <a class="btn btn-primary" href="https://calendly.com/djvbusiness10/30min" target="_blank" rel="noopener">Get a Free Audit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Howling Vanguard</strong><br />
+        <a href="mailto:djvbusiness10@gmail.com">djvbusiness10@gmail.com</a><br />
+        <a href="tel:+381631010995">+381 63 101 0995</a>
+      </div>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="booking.html">Booking</a>
+      </nav>
+      <div class="copyright">
+        © <span id="year"></span> Howling Vanguard. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script defer src="script.js"></script>
+  <script defer src="assets/main.js"></script>
 </body>
 </html>
